@@ -1,7 +1,7 @@
 ﻿
 namespace sd_common
 {
-    public interface IIdenfiable
+    public interface IIdentifiable
     {
         Guid Id { get; set; }
     }

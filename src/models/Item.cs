@@ -1,7 +1,7 @@
 ﻿
 namespace sd_common
 {
-    internal class Item : IIdenfiable
+    public class Item : IIdentifiable
     {
         public Guid Id { get; set; }
         public string? Name { get; set; }
