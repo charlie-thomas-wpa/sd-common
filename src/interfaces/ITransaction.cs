@@ -5,8 +5,8 @@ namespace sd_common
     public interface ITransaction
     {
         Guid UserId { get; set; }
+        string? Label { get; set; }
         decimal Amount { get; set; }
         DateTime Date { get; set; }
-        string? Description { get; set; }
     }
 }

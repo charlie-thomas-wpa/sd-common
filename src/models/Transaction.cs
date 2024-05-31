@@ -1,12 +1,12 @@
 ﻿
 namespace sd_common
 {
-    public class Transaction
+    public class Transaction : ITransaction
     {
-        public Guid UserId { get; set; }
         public Guid Id { get; set; }
+        public Guid UserId { get; set; }
+        public string? Label { get; set; }
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }
-        public string? Description { get; set; }
     }
 }
