@@ -11,5 +11,7 @@ namespace sd_common
         public RecurranceFrequency RepaymentFrequency { get; set; }
         public decimal InterestRate { get; set; }
         public DateTime StartDate { get; set; }
+        public new static string ToString() { return typeof(Debt).Name; }
+        public static string ForeignKey() { return "UserId"; }
     }
 }
